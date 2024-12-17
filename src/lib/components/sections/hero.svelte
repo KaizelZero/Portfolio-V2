@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { base } from '$app/paths';
   import hero from '$lib/assets/851855.webp';
   import { resumeData, siteConfig, socialLinks } from '$lib/config/site-config';
   import ElLinkedin from '~icons/el/linkedin';
@@ -45,7 +44,7 @@
       </p>
       <!-- Resume Link -->
       <a
-        href="{base}/Resume.pdf"
+        href="/Resume.pdf"
         target="_blank"
         class="flex flex-row items-center justify-center gap-x-2 transition-all hover:opacity-75"
       >

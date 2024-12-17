@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { base } from '$app/paths';
   import iqgeo from '$lib/assets/iqgeo-logo.png';
   import { Card } from '$lib/components';
   import { Section } from '$lib/components/sections';

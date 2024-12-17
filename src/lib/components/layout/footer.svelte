@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { base } from '$app/paths';
   import { socialLinks } from '$lib/config/site-config';
 </script>
 

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { base } from '$app/paths';
   import mines from '$lib/assets/mines.webp';
   import { Card } from '$lib/components';
   import { Section } from '$lib/components/sections';
