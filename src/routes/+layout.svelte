@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { dev } from '$app/environment';
   import { TailwindIndicator, ThemeToggle } from '$lib/components';
   import { Footer, Header } from '$lib/components/layout';
   import { ModeWatcher } from 'mode-watcher';
@@ -17,5 +18,7 @@
     {@render children()}
     <Footer />
   </div>
-  <TailwindIndicator />
+  {#if dev}
+    <TailwindIndicator />
+  {/if}
 </main>
