@@ -2,7 +2,7 @@
   import { socialLinks } from '$lib/config/site-config';
 </script>
 
-<footer class="mx-auto mt-24 w-full">
+<footer class="mx-auto mt-24 w-full" style="view-transition-name: footer;">
   <div class="border-t border-border pt-5">
     <div
       class="flex flex-col items-center gap-y-3 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-y-0"
