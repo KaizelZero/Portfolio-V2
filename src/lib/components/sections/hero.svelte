@@ -1,6 +1,7 @@
 <script lang="ts">
   import hero from '$lib/assets/851855.webp';
   import { resumeData, siteConfig, socialLinks } from '$lib/config/site-config';
+  import { Image } from '@unpic/svelte';
   import ElLinkedin from '~icons/el/linkedin';
   import FaRegularFilePdf from '~icons/fa-regular/file-pdf';
   import LucideBriefcaseBusiness from '~icons/lucide/briefcase-business';
@@ -9,7 +10,7 @@
 </script>
 
 <section class="flex flex-col items-center gap-y-7">
-  <img
+  <Image
     src={hero}
     alt="profile"
     class="h-28 w-auto rounded-full border-2 border-slate-500 dark:border-slate-200"

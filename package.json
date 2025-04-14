@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
+    "@unpic/svelte": "^1.0.0",
     "mode-watcher": "^0.5.1",
     "tailwindcss-animate": "^1.0.7"
   }

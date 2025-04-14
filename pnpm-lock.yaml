@@ -11,6 +11,9 @@ importers:
       '@tailwindcss/typography':
         specifier: ^0.5.16
         version: 0.5.16(tailwindcss@3.4.17)
+      '@unpic/svelte':
+        specifier: ^1.0.0
+        version: 1.0.0(svelte@5.25.3)
       mode-watcher:
         specifier: ^0.5.1
         version: 0.5.1(svelte@5.25.3)
@@ -577,6 +580,14 @@ packages:
   '@typescript-eslint/visitor-keys@8.28.0':
     resolution: {integrity: sha512-hbn8SZ8w4u2pRwgQ1GlUrPKE+t2XvcCW5tTRF7j6SMYIuYG37XuzIW44JCZPa36evi0Oy2SnM664BlIaAuQcvg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@unpic/core@1.0.1':
+    resolution: {integrity: sha512-e0cwxOhtWPd4J32rV1V6jFmDGAi1r4p/f+lDqlnx+fhgFwMTyQQKw5lL7VEthUPBHFNaNBsXNbNKwnaIs2V71Q==}
+
+  '@unpic/svelte@1.0.0':
+    resolution: {integrity: sha512-fR3tylUx3hsRqNk1/ZLd4kXA36OLyOvNiD7Koc7Us0UWOUEQ3NgALWYNTpDYBMrcR2Kpik4aTUcdp7RLsFQKnQ==}
+    peerDependencies:
+      svelte: ^5
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -1437,6 +1448,9 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
+  style-object-to-css-string@1.1.3:
+    resolution: {integrity: sha512-bISQoUsir/qGfo7vY8rw00ia9nnyE1jvYt3zZ2jhdkcXZ6dAEi74inMzQ6On57vFI+I4Fck6wOv5UI9BEwJDgw==}
+
   sucrase@3.35.0:
     resolution: {integrity: sha512-8EbVDiu9iN/nESwxeSxDKe0dunta1GOlHufmSSXxMD2z2/tMZpDMpvXQGsc+ajGo8y2uYUmixaSRUc/QPoQ0GA==}
     engines: {node: '>=16 || 14 >=14.17'}
@@ -1532,6 +1546,9 @@ packages:
 
   unist-util-stringify-position@2.0.3:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
+
+  unpic@4.1.2:
+    resolution: {integrity: sha512-sau6i25EUxumNIL7e0kDpPWkVw3yxghLYcEwxPvm08263UfABDxtUJPT3H55z7W15cVXJB/PEhw4z6Oc+idWCA==}
 
   unplugin-icons@0.22.0:
     resolution: {integrity: sha512-CP+iZq5U7doOifer5bcM0jQ9t3Is7EGybIYt3myVxceI8Zuk8EZEpe1NPtJvh7iqMs1VdbK0L41t9+um9VuuLw==}
@@ -2083,6 +2100,16 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.28.0
       eslint-visitor-keys: 4.2.0
+
+  '@unpic/core@1.0.1':
+    dependencies:
+      unpic: 4.1.2
+
+  '@unpic/svelte@1.0.0(svelte@5.25.3)':
+    dependencies:
+      '@unpic/core': 1.0.1
+      style-object-to-css-string: 1.1.3
+      svelte: 5.25.3
 
   acorn-jsx@5.3.2(acorn@8.14.1):
     dependencies:
@@ -2865,6 +2892,8 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
+  style-object-to-css-string@1.1.3: {}
+
   sucrase@3.35.0:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.8
@@ -2996,6 +3025,8 @@ snapshots:
   unist-util-stringify-position@2.0.3:
     dependencies:
       '@types/unist': 2.0.11
+
+  unpic@4.1.2: {}
 
   unplugin-icons@0.22.0(svelte@5.25.3):
     dependencies:

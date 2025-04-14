@@ -1,5 +1,6 @@
 <script lang="ts">
   import { socialLinks } from '$lib/config/site-config';
+  import { Image } from '@unpic/svelte';
 </script>
 
 <footer class="mx-auto mt-24 w-full" style="view-transition-name: footer;">
@@ -21,8 +22,8 @@
               target="_blank"
               aria-label={title}
             >
-              <img src={icon_dark} alt={title} class="h-6 w-6 dark:hidden" />
-              <img src={icon_light} alt={title} class="hidden h-6 w-6 dark:block" />
+              <Image src={icon_dark} alt={title} class="h-6 w-6 dark:hidden" />
+              <Image src={icon_light} alt={title} class="hidden h-6 w-6 dark:block" />
             </a>
           {/each}
         </div>

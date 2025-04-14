@@ -1,5 +1,6 @@
 <script lang="ts">
   import { cn } from '$lib/utils';
+  import { Image } from '@unpic/svelte';
 
   const {
     children = null,
@@ -22,7 +23,7 @@
   )}
 >
   {#if imagePath}
-    <img
+    <Image
       src={imagePath}
       alt={altText}
       class={cn('mb-3 md:absolute md:mb-0', imageClass)}
