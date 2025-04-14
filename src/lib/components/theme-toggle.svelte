@@ -2,18 +2,31 @@
   import { toggleMode } from 'mode-watcher';
   import LucideMoon from '~icons/lucide/moon';
   import LucideSun from '~icons/lucide/sun';
+
+  let isDark = false;
+
+  function handleToggle() {
+    isDark = !isDark;
+    toggleMode();
+  }
 </script>
 
 <button
-  class="inline-flex h-10 w-10 items-center justify-center gap-2 whitespace-nowrap rounded-md border border-input bg-background text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0"
+  class="relative inline-flex h-10 w-10 items-center justify-center rounded-md border border-input bg-background text-sm font-medium ring-offset-background transition-all duration-300 hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:scale-90 disabled:pointer-events-none disabled:opacity-50"
   aria-label="Toggle theme between light and dark"
-  onclick={toggleMode}
+  on:click={handleToggle}
 >
-  <LucideMoon
-    class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
-  />
-  <LucideSun
-    class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
-  />
+  <div class="relative h-5 w-5">
+    <LucideMoon
+      class="absolute h-full w-full transition-all duration-300 {isDark
+        ? '-rotate-90 scale-0 opacity-0'
+        : 'rotate-0 scale-100 opacity-100'}"
+    />
+    <LucideSun
+      class="absolute h-full w-full transition-all duration-300 {isDark
+        ? 'rotate-0 scale-100 opacity-100'
+        : 'rotate-90 scale-0 opacity-0'}"
+    />
+  </div>
   <span class="sr-only">Toggle theme</span>
 </button>

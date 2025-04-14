@@ -6,6 +6,7 @@ import { fontFamily } from 'tailwindcss/defaultTheme';
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   safelist: ['dark'],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
