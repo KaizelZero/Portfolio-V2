@@ -8,9 +8,7 @@
     <div
       class="flex flex-col items-center gap-y-3 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-y-0"
     >
-      <div class="flex gap-x-4 text-sm">
-        <p class="">© {new Date().getFullYear()} Jimmy Truong</p>
-      </div>
+      <div class="flex gap-x-4 text-sm"></div>
 
       <div class="flex items-center justify-between">
         <!-- Social Brands -->

@@ -33,7 +33,7 @@
   <div class="mt-5 flex w-full flex-col gap-y-10">
     <div>
       <h1 class="mb-1 text-2xl font-bold">Tools</h1>
-      <p>Tools and software I use daily</p>
+      <p class="text-sm">Tools and software I use daily</p>
     </div>
 
     {#each [DESIGN, PRODUCTIVITY, DEVELOPMENT] as tools}
